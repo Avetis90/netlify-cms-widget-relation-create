@@ -1,0 +1,56 @@
+{
+  "name": "netlify-cms-widget-relation-create",
+  "description": "A widget to create new item for collection with relation",
+  "keywords": [
+    "netlify-cms",
+    "cms",
+    "widget",
+    "custom widget",
+    "relation",
+    "relation-create"
+  ],
+  "version": "0.0.1",
+  "homepage": "https://github.com/Avetis90/netlify-cms-widget-relation-create",
+  "license": "MIT",
+  "main": "dist/main.js",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "netlify-cms": "^1.5.0",
+    "react": "^16.3.2",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.3",
+    "webpack": "4.19.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-serve": "^0.3.1"
+  },
+  "dependencies": {
+    "@emotion/core": "10.0.34",
+    "@emotion/styled": "^11.3.0",
+    "@emotion/styled-base": "10.0.31",
+    "netlify-cms-app": "^2.15.55",
+    "netlify-cms-lib-widgets": "^1.7.0",
+    "netlify-cms-ui-default": "^2.15.3",
+    "prop-types": "^15.6.1",
+    "react-select": "^5.1.0",
+    "react-window": "^1.8.6"
+  },
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "scripts": {
+    "start": "webpack-serve --log-level error --open-path /#/collections/test/entries/test",
+    "demo": "webpack --display errors-only --devtool source-map",
+    "build": "cross-env NODE_ENV=production webpack",
+    "prepublishOnly": "npm run build"
+  }
+}
