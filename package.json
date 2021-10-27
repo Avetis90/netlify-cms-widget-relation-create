@@ -9,7 +9,7 @@
     "relation",
     "relation-create"
   ],
-  "version": "0.0.2",
+  "version": "0.0.4",
   "homepage": "https://github.com/Avetis90/netlify-cms-widget-relation-create",
   "license": "MIT",
   "main": "dist/main.js",
@@ -31,9 +31,9 @@
     "react": "^16.3.2",
     "source-map-loader": "^0.2.3",
     "style-loader": "^0.20.3",
-    "webpack": "4.19.0",
-    "webpack-cli": "^2.0.14",
-    "webpack-serve": "^0.3.1"
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "@emotion/core": "10.0.34",
