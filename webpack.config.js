@@ -33,15 +33,29 @@ const developmentConfig = {
 
 const productionConfig = {
   mode: 'production',
+  entry: {
+    index: ['./src/index.js']
+  },
+
   module: {
     rules: [
       {
+        test: /\.tsx?$/,
+        use: "ts-loader"
+      },
+      {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
+        use: 'babel-loader',
       },
     ],
   },
-  devtool: 'source-map',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+    library: 'CreateSelectWidget',
+    libraryTarget: 'umd',
+    libraryExport: 'default',
+  }
 }
 
 module.exports = process.env.NODE_ENV === 'production' ? productionConfig : developmentConfig
