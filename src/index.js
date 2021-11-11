@@ -1,9 +1,10 @@
-import Control from './Control'
-import Preview from './Preview'
+import RelationCreateControl from './Control';
+import RelationCreatePreview from './Preview';
 
 if (typeof window !== 'undefined') {
-  window.RelationCreateControl = Control
-  window.RelationCreatePreview = Preview
+  window.RelationCreateControl = RelationCreateControl;
+  window.RelationCreatePreview = RelationCreatePreview;
 }
+const exportObject = { RelationCreateControl, RelationCreatePreview };
 
-export { Control, Preview }
+export default exportObject;

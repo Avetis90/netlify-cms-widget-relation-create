@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { WidgetPreviewContainer } from 'netlify-cms-ui-default';
 
-function RelationPreview({ value }) {
+function RelationCreatePreview({ value }) {
   return <WidgetPreviewContainer>{value}</WidgetPreviewContainer>;
 }
 
-RelationPreview.propTypes = {
+RelationCreatePreview.propTypes = {
   value: PropTypes.node,
 };
 
-export default RelationPreview;
+export default RelationCreatePreview;
